@@ -412,7 +412,7 @@ pip install -r requirements.txt
 ```
 --- 
 
-# Using the Trained Model
+# The Trained Model
 
 The trained model and encoder are already provided.
 
