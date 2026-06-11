@@ -334,6 +334,10 @@ The Random Forest model achieved approximately 81% accuracy in predicting winnin
 ```text
 Sentiment-Aware-Crypto-Trading-Intelligence/
 │
+├──dataset/
+│   ├──fear_greed_index.csv
+│   └──historical_data.csv
+│
 ├── models/
 │   ├── trading_model.joblib
 │   └── label_encoder.joblib
@@ -369,6 +373,17 @@ joblib.dump(label_encoder, 'models/label_encoder.joblib')
 ```
 
 This allows predictions to be generated without retraining the model.
+
+---
+
+# Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/trade-sense-ai.git
+cd trade-sense-ai
+```
 
 ---
 
