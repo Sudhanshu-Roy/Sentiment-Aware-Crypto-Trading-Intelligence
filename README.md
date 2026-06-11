@@ -334,6 +334,10 @@ The Random Forest model achieved approximately 81% accuracy in predicting winnin
 ```text
 Sentiment-Aware-Crypto-Trading-Intelligence/
 │
+├──dataset/
+│   ├──fear_greed_index.csv
+│   └──historical_data.csv
+│
 ├── models/
 │   ├── trading_model.joblib
 │   └── label_encoder.joblib
@@ -370,6 +374,61 @@ joblib.dump(label_encoder, 'models/label_encoder.joblib')
 
 This allows predictions to be generated without retraining the model.
 
+---
+
+# Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Sudhanshu-Roy/Sentiment-Aware-Crypto-Trading-Intelligence
+cd Sentiment-Aware-Crypto-Trading-Intelligence
+```
+
+### 2. Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+### Activate the environment:
+
+### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+### Linux / macOS
+
+```bash
+source venv/bin/activate
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+--- 
+
+# Using the Trained Model
+
+The trained model and encoder are already provided.
+
+Run:
+
+```bash
+python predict_trade_success.py
+```
+
+This loads the saved model and predicts whether a trade is likely to be profitable based on:
+
+- Coin
+- Trade Side
+- Sentiment Value
+- Sentiment Classification
+  
 ---
 
 # Future Improvements
