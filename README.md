@@ -381,10 +381,54 @@ This allows predictions to be generated without retraining the model.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/trade-sense-ai.git
-cd trade-sense-ai
+git clone https://github.com/Sudhanshu-Roy/Sentiment-Aware-Crypto-Trading-Intelligence
+cd Sentiment-Aware-Crypto-Trading-Intelligence
 ```
 
+### 2. Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+### Activate the environment:
+
+### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+### Linux / macOS
+
+```bash
+source venv/bin/activate
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+--- 
+
+# Using the Trained Model
+
+The trained model and encoder are already provided.
+
+Run:
+
+```bash
+python predict_trade_success.py
+```
+
+This loads the saved model and predicts whether a trade is likely to be profitable based on:
+
+- Coin
+- Trade Side
+- Sentiment Value
+- Sentiment Classification
+  
 ---
 
 # Future Improvements
